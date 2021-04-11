@@ -1,5 +1,5 @@
 /*
-searching the unsorted array
+Given an unsorted array, find two elements that add upto the sum
 Corner cases
 1. empty string or length of array is zero
 2. dupliacte elements
