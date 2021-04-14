@@ -48,6 +48,5 @@ int main()
 	else
 	printf("Strings are not rotations of each other");
 
-	getchar();
 	return 0;
 }
