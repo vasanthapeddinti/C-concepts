@@ -1,0 +1,10 @@
+Stack is a Linear Data Structure which uses LIFO technique.
+
+
+Four important functions in Stack:
+1. Push()
+2. Pop()
+3. Peek() or Top()
+4. Isempty()
+5. isFull()
+
