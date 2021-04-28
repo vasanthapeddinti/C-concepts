@@ -1,0 +1,9 @@
+Queue is a linear data structure which follows FIFO technique. It can be implemented using 
+an array or a linked list
+
+Operations
+1. Enqueue()
+2. Dequeue()
+3. Front()
+4. Rear()
+
