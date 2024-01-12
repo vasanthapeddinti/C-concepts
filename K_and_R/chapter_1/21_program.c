@@ -1,3 +1,5 @@
+/* Program to print all input lines that are longer than 80 characters */
+
 #include <stdio.h>
 #include <string.h>
 
