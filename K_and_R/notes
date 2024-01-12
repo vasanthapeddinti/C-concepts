@@ -8,4 +8,4 @@
     variables are globally accessible, they can be used instead of argument lists to communicate data between 
     functions. An external variable has to be defined, exactly once, outside of any function.
     The variable must be declared in each function that wants to access it. 
-    
+
