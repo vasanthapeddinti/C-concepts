@@ -1,6 +1,7 @@
 ### Varibles and constants
 
 # Variables
+
     1. Local variables (automatic variables): They are automatically deleted after the function is executed
     2. Global varibles: 
 
@@ -8,4 +9,56 @@
     variables are globally accessible, they can be used instead of argument lists to communicate data between 
     functions. An external variable has to be defined, exactly once, outside of any function.
     The variable must be declared in each function that wants to access it. 
+
+    4. External and static variables are initialized to zero by default.
+
+    5. Automatic variables for which there is no explicit initializer have garbage values
+
+# Data types
+
+| Data types    | Qualifiers    | 
+| ------------- | ------------- | 
+| char          | short         |
+| int           | long          |
+| float         | signed        |
+| double        | unsigned      |
+|               | const         |
+
+# Constants
+
+Escape sequences
+| \a   | alert            | 
+| \b   | backspace        |
+| \f   | formfeed         |
+| \n   | new line         |
+| \r   | carriage return  |
+| \t   | horizontal tab   |
+| \v   | vertical tab     |
+| \\   | backslash        |
+| \?   | question mark    |
+| \'   | single quote     |
+| \"   | double quote     |
+| \ooo | octal number     |
+| \xhh | hex number       |
+| \0   | null character   |
+
+Ex:
+    // octal 
+    #define VTAB '\013'
+
+    // hex
+    #define VTAB '\xb'
+
+character constant is defined by ' ' and represented in numeric value on machine
+ex: 'b'
+
+string constant is defined by " " and respresented in array of characters
+ex: "b"
+
+enumeration constant is a list of constant integer values
+ex: 
+    enum boolean {
+        FIRST  = 1,
+        SECOND
+    };
 
