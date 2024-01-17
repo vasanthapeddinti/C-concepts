@@ -62,3 +62,20 @@ ex:
         SECOND
     };
 
+# Bitwise Operations
+
+| ------------- | ------------- |
+| &             | AND           |
+| |             | OR            |
+| ^             | ex OR         |
+| <<            | left shift    |
+| >>            | right shift   |
+| >>            | complement    |
+| ------------- | ------------- |
+
+* AND is used to mask off some set of bits
+* OR is used to turn bits ON
+* ex OR sets a one in each bit position where it's operands have different bits,
+  and zero where they are same
+* y << x ===> multiplication of 2^x to y
+* y >> x ===> division of y and 2^x

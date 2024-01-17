@@ -13,6 +13,8 @@ int main ()
     char s[] = "12345";
 
     printf("String value is %s, integer value is %d\n", s, atoi(s));
+    printf("lower of S is %c\n",lower('S'));
+    printf("upper of s is %c\n",upper('s'));
 
     return 0;
 }
@@ -24,9 +26,6 @@ int atoi(char s[]) {
     for (int i = 0; s[i] >= '0' && s[i] <='9'; i++) {
         n = 10 * n + (s[i] - '0');
     }
-
-    printf("lower of S is %c\n",lower('S'));
-    printf("upper of s is %c\n",upper('s'));
 
     return n;
 }
