@@ -8,7 +8,7 @@ int expand(char s1[], char s2[]);
 int main() {
 
     char s1[] = "e-g0-9";
-    char s2[MAXLEN] = "";
+    char s2[MAXLEN];
 
     if (expand(s1, s2) == 0) {
         printf("expanded string is %s\n", s2);
@@ -57,5 +57,6 @@ int expand(char s1[], char s2[]) {
             }
         }
     }
+    s2[j] = '\0';
     return err;
 }

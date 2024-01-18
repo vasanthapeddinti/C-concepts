@@ -24,6 +24,22 @@
 | double        | unsigned      |
 |               | const         |
 
+format specifiers:
+* %e - represents the data in exponential power(scientific format), 'e' would be 
+  by default mean exponential power 10.
+
+* %g represents the decimal format of the answer, depending upon whose length is
+  smaller, comparing between %e and %f.
+
+Ex:
+123.45 * 10^8, it will print it as 1.2345e+10
+%f : 12345000000.000000 & %e : 1.234500e+10
+
+After removing succeeding zeros
+%f : 12345000000 & %e : 1.2345e+10
+
+%e gives shorted result. So, %g prints 1.2345e+10
+ 
 # Constants
 
 Escape sequences
@@ -79,3 +95,14 @@ ex:
   and zero where they are same
 * y << x ===> multiplication of 2^x to y
 * y >> x ===> division of y and 2^x
+* Two's complement is the most common method of representing signed (positive, negative,
+  and zero) integers on computers, and more generally, fixed point binary values.
+* 2' complement is 1's complement + 1
+* 2’s complement has this nice property that first bit is a sign bit because all 
+  positive starts with 0 whereas all negative with 1
+* https://stackoverflow.com/questions/1125304/why-prefer-twos-complement-over-sign-and-magnitude-for-signed-numbers
+* Subtraction of two Binary Numbers, subtract two binary numbers using 2’s Complement method. 
+Step-1: Find the 2’s complement of the subtrahend.
+Step-2: Add the first number and 2’s complement of the subtrahend.
+Step-3: If a carry is produced, discard the carry. If there is no carry then take the 2’s 
+complement of the result.
