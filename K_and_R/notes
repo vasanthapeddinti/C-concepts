@@ -1,18 +1,25 @@
-### Varibles and constants
 
 # Variables
 
-    1. Local variables (automatic variables): They are automatically deleted after the function is executed
-    2. Global varibles: 
+    1. Local variables (automatic variables): Variables defined inside a function. They are automatically deleted after the function is executed
 
-    3. extern variables: Variables that can be accessed by name by any function. Since external
-    variables are globally accessible, they can be used instead of argument lists to communicate data between 
-    functions. An external variable has to be defined, exactly once, outside of any function.
-    The variable must be declared in each function that wants to access it. 
+    2. Global varibles: Variables declared outside the functions and can be used by multiple functions in the same file but not different files.
 
-    4. External and static variables are initialized to zero by default.
+    3. External variables: Keyword 'extern'. Variables that can be accessed by any function across multiple files. Since external variables are globally accessible, they can be used instead of argument lists to communicate data between functions. An external variable has to be defined, exactly once among all the files that make up the source program. The variable must be declared in each function that wants to access it with the keyword extern. 
 
-    5. Automatic variables for which there is no explicit initializer have garbage values
+    4. Static variables: The purpose of static is to declare that a variable or a function is private to the  file/block that it is declared in. It does the opposite of what extern wants to do. Depending on the 
+    context it is used, static can be used to control lifetime and visibility.
+      a) External/Global static variables: Declared outside of functions, and are visible to just that
+         particular source file.
+      b) Internal static variables: Declared inside the functions and retains the value after every function
+         call invocation. They provide private permanent storage within a single function.
+      c) Static functions: By default, all the functions are global visible to any part of the entire program.
+         But, when defined as static, it's name is invisible outside the file in which it is declared.
+
+    5. Register variables: A register declaration advices compiler that the variable will be heavily used and if 
+       possible place them in machine registers, which may result in faster access. This can be ignored by compiler. Can only be applied to automatic/local variables. It is not possible to get the address of register variables whether they are placed in register or not.
+
+    6. External and static variables are initialized to zero by default. Automatic and register variables for which there is no explicit initializer have garbage values
 
 # Data types
 
