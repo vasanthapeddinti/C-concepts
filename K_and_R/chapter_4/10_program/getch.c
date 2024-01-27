@@ -15,14 +15,3 @@ int getch() {
         return getchar();
     }
 }
-
-// unread the character
-void ungetch(int c) {
-    // If buffer is full, print error. Else, put the char back
-    if (bufp >= BUFSIZE) {
-        printf("error: ungetch: too many characters");
-    } else {
-        buf[bufp] = c;
-        bufp++;
-    }
-}
