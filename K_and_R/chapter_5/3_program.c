@@ -14,7 +14,7 @@ int getint(int *pn);
 
 int main() {
 
-    int num;
+    int num = 0;
 
     // It can read only integers
     getint(&num);
@@ -61,6 +61,10 @@ int getint(int *pn) {
     sign = (c == '-') ? -1 : 1;
     if (c == '+' || c == '-') {
         c = getch();
+    }
+
+    if (!isdigit(c)) {
+        return 0;
     }
 
     for (*pn = 0; isdigit(c); c = getch()) {
