@@ -2,4 +2,4 @@ CC=gcc
 CFLAGS = -std=c11 -Wall -Wextra -Wwrite-strings -Wno-parentheses -Wpedantic -Warray-bounds -Wconversion -I.
 
 all:
-	$(CC) $(CFLAGS) chapter_6/5_program.c
+	$(CC) $(CFLAGS) chapter_6/8_program.c
