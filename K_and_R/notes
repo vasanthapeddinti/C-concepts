@@ -113,3 +113,9 @@ Step-1: Find the 2’s complement of the subtrahend.
 Step-2: Add the first number and 2’s complement of the subtrahend.
 Step-3: If a carry is produced, discard the carry. If there is no carry then take the 2’s 
 complement of the result.
+
+
+-----****-----
+
+    1. Integer constants written with a leading 0 are interpreted as octal (base-8), not decimal (base-10). 
+    2. Integer constants written with a leading 0x are interpreted as hexadecimal (base-16) interpretation.
